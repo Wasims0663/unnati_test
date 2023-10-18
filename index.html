@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3fe64b00cb.js" crossorigin="anonymous"></script>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+    rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container-fluid{
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        /* Define CSS styles for your company name and small text */
+        .company-name {
+            text-align: left; /* Align the company name to the left */
+            display: inline-block; /* Make it an inline-block element */
+            vertical-align: middle; /* Vertically align with other elements */
+        }
+      
+        /* Define CSS styles for the section */
+        .fst_sec {
+            text-align: center; /* Center-align the subheading */
+        }
+        .sec{
+            padding-top: 85px;
+            color: black; 
+        }
+        .footer_container h4{
+            color: green;
+            border-bottom: 1px solid;
+
+        }
+        .navbar {
+            background-color: transparent;
+            padding-right: 75px;
+            text-align: right; /* Align the navigation menu to the right */
+            padding: 30px; /* Add padding for spacing */
+            display: inline-block; /* Make it an inline-block element */
+            vertical-align: middle; /* Vertically align with other elements */
+            
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-left: 20px;
+            font-weight: 700;
+            color: wheat;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: wheat;
+        }
+        /* Style for the transparent button */
+        .transparent-button {
+            background-color: transparent;
+            color: black;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .blocks-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkgreen;
+            padding: 15px 30px;
+            height: 85px;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            z-index: 999;
+
+        }
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            top: 26%;
+            left: 15%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: center;
+        }
+        .footer_container{
+            background-color: rgb(207, 206, 206);
+            padding: 50px;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 18px;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="blocks-container">
+                <div class="company-name">
+                    <img src="https://unnatiagri.com/assets/img/logo/logo.webp" alt="Unnati logo" width="196px" height="54px">
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav class="navbar">
+                    <ul>
+                       <li><a href="/index.html">Home</a></li>
+                        <li><a href="/hellofolder/hello.html">About Us</a></li>
+                        <li><a href="/hellofolder/partners.html">Partners</a></li>
+                        <li><a href="/service.html">Services</a></li>
+                        <li><a href="/hellofolder/news.html">News</a></li>
+                        <li><a href="/hellofolder/Agtech.html">AgTech</a></li>
+                        <li><a href="/contact.html">Conatact Us</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main">
+            <section class="fst_sec sec">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="400">
+                        <img class="d-block w-100" src="https://static.dw.com/image/64115481_1004.webp" alt="First slide" width="100%" height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Empower farmers with digital technologies</h3>
+                            <h4>#PoweringFarmBiz</h4>
+                            
+                            <!-- Transparent button -->
+                            <a href="/hellofolder/hello.html"><button type="button" class="btn btn-warning btn-lg"><b>Read More</b></button></a>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="400">
+                        <img class="d-block w-100" src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Second slide" width="100%" height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Empower farmers with digital technologies</h3>
+                            <h4>#PoweringFarmBiz</h4>
+                            
+                            <!-- Transparent button -->
+                            <a href="/hellofolder/hello.html"><button type="button" class="btn btn-warning btn-lg"><b>Read More</b></button></a>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="400">
+                        <img class="d-block w-100" src="https://images.pexels.com/photos/259280/pexels-photo-259280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Third slide" width="100%" height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Empower farmers with digital technologies</h3>
+                            <h4>#PoweringFarmBiz</h4>
+                            
+                            <!-- Transparent button -->
+                            <a href="/hellofolder/hello.html"><button type="button" class="btn btn-warning btn-lg" ><b>Read More</b></button></a>
+                          </div>
+                          
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section class="sec">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card " style="width: 18rem; margin: 0 auto;">
+                                <div class="bg-image hover-zoom">
+                                <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="unnati-banking" height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Unnati Banking Service</h5>
+                                    <p class="card-text">Innovative financial management service for farm entrepreneurs</p>
+                                    <a href="/service.html#finan" class="btn btn-info">Know More</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem; margin: 0 auto;">
+                                <div class="bg-image hover-zoom">
+                                <img src="https://images.pexels.com/photos/753869/pexels-photo-753869.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="unnati-banking" height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agri-Inputs
+                                        Service</h5>
+                                    <p class="card-text">Guiding farmers to predict, optimise and purchase agri-iputs
+                                    </p>
+                                    <a href="/service.html#int_ser" class="btn btn-danger">Know More</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem; margin: 0 auto;">
+                                <div class="bg-image hover-zoom">
+                                <img src="https://images.pexels.com/photos/461960/pexels-photo-461960.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="unnati-banking" height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Output Management</h5>
+                                    <p class="card-text">Offering transparent access to selling options and timely finance.</p>
+                                    <a href="/service.html#out_put" class="btn btn-warning">Know More</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem; margin: 0 auto;">
+                                <div class="bg-image hover-zoom">
+                                <img src="https://images.pexels.com/photos/541670/pexels-photo-541670.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Agronomy
+                                Service" height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agronomy
+                                        Service</h5>
+                                    <p class="card-text">Supporting farmers throughout the farming lifecycle
+                                    </p>
+                                    <a href="/service.html#agro" class="btn btn-success">Know More</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="footer_block">
+                    <h4>Our Story</h4>
+                    <p>Unnati Agri Ecosystem</p>
+                    <p>AI Powered Tech</p>
+                    <p>Intelligent Platform</p>
+                    <p>Farming with Unnati</p>
+                </div>
+            </div>
+                <div class="col-md-3">
+                    <h4>Services</h4>
+                    <p>Unnati Banking for Farmers</p>
+                    <p>Supplying Agri-inputs</p>
+                    <p>Output Sale for Farmers</p>
+                    <p>Agronomy Service</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <b><p>Akshamaala Solutions Pvt. Ltd.</p></b>
+                    <p>D-8, First Floor, Sector-2,</p>
+                    <p>Noida, Uttar Pradesh - 201301</p>
+                    <p><i class="fa-solid fa-phone" style="color: #00670c;"></i>9696250557</p>
+                    <p><i class="fa-solid fa-envelope" style="color: #00670c;"></i></i>wasim.s@unnati.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14013.956136514196!2d77.3139559!3d28.5851025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9a2690aa6a593c1!2sUnnati%20Agri%20(Akshamaala%20Solutions%20Pvt.%20Ltd)!5e0!3m2!1sen!2sin!4v1654855493224!5m2!1sen!2sin" 
+                    style="border:0; width: 100%; height:250px" allowfullscreen loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Rest of your website content goes here -->
+<script>
+    $('.carousel').carousel({
+  interval: 400
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+
+   
+</body>
+</html>
+
+
+
