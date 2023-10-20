@@ -20,9 +20,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .container-fluid {
+        .container-fluid{
             margin: 0px !important;
             padding: 0px !important;
+            overflow: hidden;
         }
 
         /* Define CSS styles for your company name and small text */
@@ -46,16 +47,13 @@
 
         .navbar {
             background-color: transparent;
+            box-shadow: none;
             padding-right: 75px;
-            text-align: right;
-            /* Align the navigation menu to the right */
-            padding: 30px;
-            /* Add padding for spacing */
-            display: inline-block;
-            /* Make it an inline-block element */
-            vertical-align: middle;
-            /* Vertically align with other elements */
-
+            text-align: right; /* Align the navigation menu to the right */
+            padding: 30px; /* Add padding for spacing */
+            display: inline-block; /* Make it an inline-block element */
+            vertical-align: middle; /* Vertically align with other elements */
+            
         }
 
         .navbar ul {
@@ -127,8 +125,53 @@
             color: green;
             border-bottom: 1px solid;
         }
+        .dropdown{
+            background-color: darkgreen;
+            box-shadow: none;
+        }
+        .dropdown button{
+            background-color: darkgreen;
+            box-shadow: none;
+        }
 
-        
+        .dropdown ul{
+            background-color: darkgreen;
+            box-shadow: none;
+        }
+
+        .dropdown ul .dropdown-item{
+            text-decoration: none;
+            color: wheat;
+            background-color: darkgreen;
+        }
+
+        @media  (max-width:768px) {
+            .nav_desk{
+                display: none;
+            } 
+            .nav_mobile{
+                display: block;
+            }
+            .blocks-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: darkgreen;
+                padding: 15px 5px;
+                height: 85px;
+                width: 100%;
+                top: 0;
+                position: fixed;
+                z-index: 999;
+            }
+            .company-name img{
+                margin-left: -35px;
+            }
+        }
+       
+        .nav_mobile{
+            display: none;
+        }
     </style>
 </head>
 
@@ -142,9 +185,9 @@
                             height="54px">
                         </a>
                 </div>
-
+                
                 <!-- Navigation Menu -->
-                <nav class="navbar">
+                <nav class="navbar nav_desk">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="hello.html">About Us</a></li>
@@ -155,7 +198,22 @@
                         <li><a href="contact.html">Conatact Us</a></li>
                     </ul>
                 </nav>
+                <div class="dropdown nav_mobile">
+                    <button class="btn p-0 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="fa-solid fa-bars" style="color: #cacc5c; font-size: 30px;"></i></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="hello.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                        <li><a class="dropdown-item" href="service.html">Services</a></li>
+                        <li><a class="dropdown-item" href="news.html">News</a></li>
+                        <li><a class="dropdown-item" href="Agtech.html">AgTech</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Conatact Us</a></li>
+                    </ul>
+                  </div>
             </div>
+            
         </div>
         <div class="main">
             <section class="fst_sec">
